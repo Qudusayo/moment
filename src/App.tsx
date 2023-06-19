@@ -165,6 +165,9 @@ function App() {
     // let muted = localStorage.getItem("muted");
     if (bgVideo) {
       setBgSource(bgVideo);
+    } else {
+      let randomVid = vids[Math.floor(Math.random() * vids.length)].video;
+      setBgSource(randomVid);
     }
     // if (muted) {
     //   setMuted(JSON.parse(muted));
